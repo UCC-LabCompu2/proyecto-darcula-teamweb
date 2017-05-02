@@ -1,0 +1,17 @@
+.ambos{
+    height: 300px;
+    background: red;
+}
+.primero  {
+    width: 400px;
+    height: 300px;
+    float: left;
+    overflow: scroll;
+}
+.segundo{
+    margin-left: 220px;
+    min-width: 600px;
+    height: 300px;
+    overflow: scroll;
+
+}
