@@ -51,8 +51,8 @@ h1,h2,b,p,h3
     color: black;
 }
 a{
-    color: blue;
-    background: white; border: solid black 2px; border-radius: 25px;
+    color: black;
+    background: gray; border: solid black 2px; border-radius: 25px;
 display: inline-block;
     padding: 10px;
 }
@@ -60,4 +60,9 @@ display: inline-block;
 {
     size: 20px;
     color: blue;
+}
+#body
+{
+
+    background: url("https://image.freepik.com/vector-gratis/fondo-de-textura-con-un-diseno-de-madera-clara_1048-1352.jpg");
 }
