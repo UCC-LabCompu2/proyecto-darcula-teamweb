@@ -8,7 +8,7 @@
 .ambos
 {
     height: 300px;
-    background-image: url("http://www.walldevil.com/wallpapers/a71/wallpaper-patterns-stripe-contemporary-fresh-stripes-digital-art-images.jpg");
+    background-image: url("");
 
 }
 .primero
@@ -32,15 +32,14 @@
    text-align: center;
 }
 .con_imagenes{
-    height: 200px;
     height: auto;
 }
 .plastico {
-    margin-left: 220px;
+    overflow-y: auto;
 
 }
 .elastico{
-    margin-left:900px;
+    overflow-y: auto;
 
 }
 img{
@@ -49,9 +48,11 @@ img{
 }
 h1,h2,b,p,h3
 {
-    color: white;
+    color: black;
 }
 a{
     color: blue;
-
+    background: white; border: solid black 2px; border-radius: 25px;
+display: inline-block;
+    padding: 10px;
 }
