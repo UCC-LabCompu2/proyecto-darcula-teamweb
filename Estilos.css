@@ -1,14 +1,15 @@
 .title
 {
     text-align: center;
-    width: 400px;
-    height: 20px;
+    width: 500px;
+    height:30px;
     margin: 0 auto;
 }
 .ambos
 {
     height: 300px;
-    background: blue;
+    background-image: url("http://www.walldevil.com/wallpapers/a71/wallpaper-patterns-stripe-contemporary-fresh-stripes-digital-art-images.jpg");
+
 }
 .primero
 {
@@ -16,6 +17,7 @@
     height: 300px;
     float: left;
     overflow: scroll;
+
 }
 .segundo
 {
@@ -27,4 +29,24 @@
 .header
 {
    text-align: center;
+}
+.con_imagenes{
+    height: 200px;
+    height: auto;
+}
+.plastico {
+    margin-left: 220px;
+}
+.elastico{
+    margin-left:900px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+h1,h2,b,p{
+    color: white;
+}
+a{
+    color: black;
 }
