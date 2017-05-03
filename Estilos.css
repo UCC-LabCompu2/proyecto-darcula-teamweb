@@ -7,6 +7,7 @@
 
 .ambos {
     height: 300px;
+    border:1px solid black
 }
 
 .primero {
@@ -55,7 +56,7 @@ h1, h2, b, p, h3 {
 a {
     color: black;
     background: gray;
-    border: solid black 2px;
+    border: solid black 1px;
     border-radius: 25px;
     display: inline-block;
     padding: 10px;
