@@ -70,14 +70,16 @@ body {
 
     background: url("https://image.freepik.com/vector-gratis/fondo-de-textura-con-un-diseno-de-madera-clara_1048-1352.jpg");
 }
-.objeto1{
-    width: 50%;
-    height: 300px;
+
+.columnaleft{
+    float: left;
+    margin-left: 40px;
+}
+.columnaright{
+    float: right;
+    margin-right: 40px;
+}
+.despues{
     float: left;
 
-}
-.objeto2{
-    width: 50%;
-    height: 300px;
-    float: right;
 }
