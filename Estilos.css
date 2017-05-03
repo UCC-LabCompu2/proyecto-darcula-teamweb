@@ -36,17 +36,21 @@
 }
 .plastico {
     margin-left: 220px;
+
 }
 .elastico{
     margin-left:900px;
+
 }
 img{
     display: block;
     margin: auto;
 }
-h1,h2,b,p{
+h1,h2,b,p,h3
+{
     color: white;
 }
 a{
-    color: black;
+    color: blue;
+
 }
