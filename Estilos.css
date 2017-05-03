@@ -13,18 +13,19 @@
 }
 .primero
 {
-    width: 650px;
+    width: 50%;
     height: 300px;
     float: left;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: auto;
 
 }
 .segundo
 {
-    margin-left: 220px;
+    width: 50%;
     height: 300px;
-    overflow: scroll;
-
+    overflow-y: scroll;
+    overflow-x: auto;
 }
 .header
 {
