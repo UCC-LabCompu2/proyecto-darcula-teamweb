@@ -56,3 +56,8 @@ a{
 display: inline-block;
     padding: 10px;
 }
+.encabezado
+{
+    size: 20px;
+    color: blue;
+}
