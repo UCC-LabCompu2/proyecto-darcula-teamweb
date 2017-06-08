@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>CHOQUE PLASTICO</title>
     <link rel="stylesheet" type="text/css" href="Estilos.css" media="screen"/>
+    <script type="text/javascript" src="java.js" ></script>
 </head>
 <body>
 <h1>PLÁSTICO</h1>
@@ -15,8 +16,8 @@
         <h1>Objeto 1:</h1>
         <div class="Mi1">
             <label> Mi 1:</label>
-            <input type="number" size="10">
-            <select name="unidades_masa">
+            <input type="number" size="10" id="masaI1" onchange="verificar()">
+            <select name="unidades_masa" id="mmasaI1" onchange="convertir()">
                 <option value="g">Gramos</option>
                 <option value="g">Decagramos</option>
                 <option value="h">Hectogramos</option>
@@ -26,8 +27,8 @@
 
         <div class="Vi1">
             <label> Vi 1:</label>
-            <input type="number" size="10">
-            <select name="unidades_longitud">
+            <input type="number" size="10" id="velI1" onchange="">
+            <select name="unidades_longitud" id="vvelI1"  onchange="convertir()">
                 <option value="m">Metros</option>
                 <option value="mm">Milímetros</option>
                 <option value="cm">Centímetros</option>
@@ -41,8 +42,8 @@
         <div class="Mi2">
 
             <label> Mi 2:</label>
-            <input type="number" size="10">
-            <select name="unidades_masa">
+            <input type="number" size="10" id="masaI2" onchange="verificar()">
+            <select name="unidades_masa" id="mmasaI2" onchange="convertir()">
                 <option value="g">Gramos</option>
                 <option value="g">Decagramos</option>
                 <option value="h">Hectogramos</option>
@@ -55,8 +56,8 @@
 
         <div class="Vi2">
             <label> Vi 2:</label>
-            <input type="number" size="10">
-            <select name="unidades_longitud">
+            <input type="number" size="10" id="velI2" onchange="">
+            <select name="unidades_longitud" id="vvelI2" onchange="convertir()">
                 <option value="m">Metros</option>
                 <option value="mm">Milímetros</option>
                 <option value="cm">Centímetros</option>
@@ -74,8 +75,8 @@
         <h1>Después del choque</h1>
         <div class="Mf">
             <label> Mf :</label>
-            <input type="number" size="10">
-            <select name="unidades_masa">
+            <input type="number" size="10" id="masaF" onchange="verificar()">
+            <select name="unidades_masa" id="mmasaF" onchange="convertir(this.value,this.id)">
                 <option value="g">Gramos</option>
                 <option value="g">Decagramos</option>
                 <option value="h">Hectogramos</option>
@@ -86,8 +87,8 @@
 
         <div class="Vf">
             <label> Vf :</label>
-            <input type="number" size="10">
-            <select name="unidades_longitud">
+            <input type="number" size="10" id="velF" onchange="">
+            <select name="unidades_longitud" id="vvelF" onchange="convertir()">
                 <option value="m">Metros</option>
                 <option value="mm">Milímetros</option>
                 <option value="cm">Centímetros</option>
