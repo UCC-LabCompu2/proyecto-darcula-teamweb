@@ -51,20 +51,20 @@ function verificar()  //verifica que ingreses 2 de las 3 masas
 
     function calculo() {  // verifica las unidades y las pasa a g y a m
 
-        var masa1 = parseFloat(document.getElementById("masaI1").value);
-        var masa2 = parseFloat(document.getElementById("masaI2").value);
-        var masaF = parseFloat(document.getElementById("masaF").value);
-        var unidadmasa1 = parseFloat(document.getElementById("mmasaI1").value);
-        var unidadmasa2 = parseFloat(document.getElementById("mmasaI2").value);
-        var unidadmasaF = parseFloat(document.getElementById("mmasaF").value);
+        var masa1 = document.getElementById("masaI1").value;
+        var masa2 = document.getElementById("masaI2").value;
+        var masaF = document.getElementById("masaF").value;
+        var unidadmasa1 = document.getElementById("mmasaI1").value;
+        var unidadmasa2 =document.getElementById("mmasaI2").value;
+        var unidadmasaF = document.getElementById("mmasaF").value;
 
 
-        var velocidad1 = parseFloat(document.getElementById("velI1").value);
-        var velocidad2 = parseFloat(document.getElementById("velI2").value);
-        var velocidadF = parseFloat(document.getElementById("velF").value);
-        var unidadVel1 = parseFloat(document.getElementById("mvelI1").value);
-        var unidadVel2 = parseFloat(document.getElementById("mvelI2").value);
-        var unidadVelF = parseFloat(document.getElementById("mvelF").value);
+        var velocidad1 =document.getElementById("velI1").value;
+        var velocidad2 = document.getElementById("velI2").value;
+        var velocidadF = document.getElementById("velF").value;
+        var unidadVel1 = document.getElementById("mvelI1").value;
+        var unidadVel2 = document.getElementById("mvelI2").value;
+        var unidadVelF = document.getElementById("mvelF").value;
 
 
 
