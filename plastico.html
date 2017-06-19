@@ -6,9 +6,10 @@
     <link rel="stylesheet" type="text/css" href="Estilos.css" media="screen"/>
     <script type="text/javascript" src="java.js" ></script>
     <script type="text/javascript" src="canvas.js"></script>
+
 </head>
 <body>
-<h1>PLÁSTICO</h1>
+<h1 align="center">PLÁSTICO</h1>
 
 <div class="antes">
     <h2>Antes del choque</h2>
@@ -17,10 +18,10 @@
         <h1>Objeto 1:</h1>
         <div class="Mi1">
             <label> Mi 1:</label>
-            <input type="number" size="10" id="masaI1" onchange="verificar()">
-            <select name="unidades_masa" id="mmasaI1">
+            <input type="number" size="10" id="masaI1" >
+            <select name="unidades_masa" id="mmasaI1" >
                 <option value="g">Gramos</option>
-                <option value="g">Decagramos</option>
+                <option value="dg">Decagramos</option>
                 <option value="h">Hectogramos</option>
                 <option value="kg">Kilogramos</option>
             </select>
@@ -29,11 +30,11 @@
         <div class="Vi1">
             <label> Vi 1:</label>
             <input type="number" size="10" id="velI1" >
-            <select name="unidades_longitud" id="mvelI1"  >
-                <option value="m">Metros</option>
-                <option value="mm">Milímetros</option>
-                <option value="cm">Centímetros</option>
-                <option value="dm">decímetros</option>
+            <select name="unidades_longitud" id="mvelI1" >
+
+            <option value="m">M/s</option>
+                <option value="km">Km/Hs</option>
+
 
             </select>
         </div>
@@ -43,10 +44,10 @@
         <div class="Mi2">
 
             <label> Mi 2:</label>
-            <input type="number" size="10" id="masaI2" onchange="verificar()">
-            <select name="unidades_masa" id="mmasaI2" >
+            <input type="number" size="10" id="masaI2" >
+            <select name="unidades_masa" id="mmasaI2"  >
                 <option value="g">Gramos</option>
-                <option value="g">Decagramos</option>
+                <option value="dg">Decagramos</option>
                 <option value="h">Hectogramos</option>
                 <option value="kg">Kilogramos</option>
 
@@ -59,15 +60,15 @@
             <label> Vi 2:</label>
             <input type="number" size="10" id="velI2" >
             <select name="unidades_longitud" id="mvelI2" >
-                <option value="m">Metros</option>
-                <option value="mm">Milímetros</option>
-                <option value="cm">Centímetros</option>
-                <option value="dm">decímetros</option>
+                <option value="m">M/s</option>
+            <option value="km">Km/Hs</option>
+
 
             </select>
         </div>
     </div>
-    <img src="IMAGENES/choque%20antes.jpg">
+    <canvas id="lienzo" width="500" height="300" style="border:1px solid #000000;">
+    </canvas>
 </div>
 
 <div class="despues">
@@ -76,10 +77,10 @@
         <h1>Después del choque</h1>
         <div class="Mf">
             <label> Mf :</label>
-            <input type="number" size="10" id="masaF" onchange="verificar()">
+            <input type="number" size="10" id="masaF" >
             <select name="unidades_masa" id="mmasaF" >
                 <option value="g">Gramos</option>
-                <option value="g">Decagramos</option>
+                <option value="dg">Decagramos</option>
                 <option value="h">Hectogramos</option>
                 <option value="kg">Kilogramos</option>
             </select>
@@ -88,12 +89,10 @@
 
         <div class="Vf">
             <label> Vf :</label>
-            <input type="number" size="10" id="velF" onchange="">
+            <input type="number" size="10" id="velF">
             <select name="unidades_longitud" id="mvelF" >
-                <option value="m">Metros</option>
-                <option value="mm">Milímetros</option>
-                <option value="cm">Centímetros</option>
-                <option value="dm">decímetros</option>
+                <option value="m">M/s</option>
+            <option value="km">Km/Hs</option>
             </select>
 
         </div>
@@ -101,15 +100,14 @@
     </div>
 
 </div>
-<img src="IMAGENES/segunda.jpg" align="center">
 
 <h4 align="center">
-    <button type="button">
+    <button type="button" onclick="calculo()">
         Calcular
     </button>
 </h4>
-<h4 align="center">El resultado es: <input type="number" disabled></h4>
-<a href="index.html">Volver a la pagina principal</a>
+
+<br><br><br><br><br><a href="index.html">Volver a la pagina principal</a>
 
 </body>
 

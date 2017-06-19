@@ -6,6 +6,7 @@
     <title>CHOQUE ELASTICO</title>
     <link rel="stylesheet" type="text/css" href="Estilos.css" media="screen"/>
     <script type="text/javascript" src="java.js" ></script>
+    <script type="text/javascript" src="canvas1.js" ></script>
 
 </head>
 <div class="header">
@@ -17,8 +18,8 @@
         <div class="Mi1">
 
             <label> Mi 1:</label>
-            <input type="number" size="10">
-            <select name="unidades_masa">
+            <input type="number" size="10" id="masaI1" >
+            <select name="unidades_masa" id="mmasaI1" >
                 <option value="g">Gramos</option>
                 <option value="d">Decagramos</option>
                 <option value="h">Hectogramos</option>
@@ -31,8 +32,8 @@
 
         <div class="Mf1">
             <label> Mf 1:</label>
-            <input type="number" size="10">
-            <select name="unidades_masa">
+            <input type="number" size="10" id="masaF1" >
+            <select name="unidades_masa" id="mmasaF1" >
                 <option value="g">Gramos</option>
                 <option value="d">Decagramos</option>
                 <option value="h">Hectogramos</option>
@@ -43,12 +44,11 @@
 
         <div class="Vi1">
             <label> Vi 1:</label>
-            <input type="number" size="10">
-            <select name="unidades_longitud">
-                <option value="m">Metros</option>
-                <option value="mm">Milímetros</option>
-                <option value="cm">Centímetros</option>
-                <option value="dm">Decímetros</option>
+            <input type="number" size="10" id="velI1" >
+            <select name="unidades_longitud" id="mvelI1" >
+                <option value="m">M/s</option>
+                <option value="km">Km/Hs</option>
+
 
             </select>
         </div>
@@ -56,12 +56,11 @@
 
         <div class="Vf1">
             <label> Vf 1:</label>
-            <input type="number" size="10">
-            <select name="unidades_longitud">
-                <option value="m">Metros</option>
-                <option value="mm">Milímetros</option>
-                <option value="cm">Centímetros</option>
-                <option value="dm">Decímetros</option>
+            <input type="number" size="10" id="velF1">
+            <select name="unidades_longitud" id="mvelF1" >
+                <option value="m">M/s</option>
+                <option value="km">Km/Hs</option>
+
             </select>
 
         </div>
@@ -73,8 +72,8 @@
         <div class="Mi2">
 
             <label> Mi 2:</label>
-            <input type="number" size="10">
-            <select name="unidades_masa">
+            <input type="number" size="10" id="masaI2" >
+            <select name="unidades_masa" id="mmasaI2"  >
                 <option value="g">Gramos</option>
                 <option value="d">Decagramoss</option>
                 <option value="h">Hectogramos</option>
@@ -85,8 +84,8 @@
 
         <div class="Mf2">
             <label> Mf 2:</label>
-            <input type="number" size="10">
-            <select name="unidades_masa">
+            <input type="number" size="10" id="masaF2" >
+            <select name="unidades_masa" id="mmasaF2"  >
                 <option value="g">Gramos</option>
                 <option value="d">Decagramos</option>
                 <option value="h">Hectogramos</option>
@@ -97,12 +96,10 @@
 
         <div class="Vi2">
             <label> Vi 2:</label>
-            <input type="number" size="10">
-            <select name="unidades_longitud">
-                <option value="m">Metros</option>
-                <option value="mm">Milímetros</option>
-                <option value="cm">Centímetros</option>
-                <option value="dm">Decímetros</option>
+            <input type="number" size="10" id="velI2" >
+            <select name="unidades_longitud" id="mvelI2" >
+                <option value="m">M/s</option>
+                <option value="km">Km/Hs</option>
 
             </select>
         </div>
@@ -110,24 +107,24 @@
 
         <div class="Vf2">
             <label> Vf 2:</label>
-            <input type="number" size="10">
-            <select name="unidades_longitud">
-                <option value="m">Metros</option>
-                <option value="mm">Milímetros</option>
-                <option value="cm">Centímetros</option>
-                <option value="dm">Decímetros</option>
+            <input type="number" size="10" id="velF2" >
+            <select name="unidades_longitud" id="mvelF2" >
+                <option value="m">M/s</option>
+                <option value="km">Km/Hs</option>
             </select>
 
         </div>
     </div>
-</div>
+</div  >
+<canvas id="lienzo" width="300" height="300"   text-align="center"  position="center" style="border:1px solid #000000;">
 
-<img src="IMAGENES/elastico.jpg">
-<br>
-<button type="button">
+</canvas>
+
+<button type="button" onclick="calculoe()">
     Calcular
-</button>
-<h4 align="center">El resultado es: <input type="number" disabled></h4>
+</button><br><br>
+
+
 <a href="index.html">Volver a la pagina principal</a>
 
 </body>

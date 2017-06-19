@@ -30,9 +30,6 @@
     text-align: center;
 }
 
-.con_imagenes {
-    height: auto;
-}
 
 .plastico {
     overflow-y: auto;
@@ -42,11 +39,6 @@
 .elastico {
     overflow-y: auto;
 
-}
-
-img {
-    display: block;
-    margin: auto;
 }
 
 h1, h2, b, p, h3 {
@@ -86,3 +78,4 @@ body {
     float: left;
 
 }
+.canvas

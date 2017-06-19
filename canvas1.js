@@ -1,4 +1,7 @@
 /**
+ * Created by aguma on 19/6/2017.
+ */
+/**
  * Created by aguma on 15/6/2017.
  */
 // Función que crea un circulo.
@@ -45,6 +48,7 @@ function Pelota(x, y, r, color) {
     }
 }
 
+
 //Función que actualiza y dibuja la pelota.
 function gameLoop() {
     limpiar();
@@ -62,13 +66,27 @@ function gameLoop() {
 
     if(cuenta==66)
     {
-        pelota3 = new Pelota(182, 197, 20, "green");
+        pelota1.color= "blue";
+        pelota2.color= "yellow"
         cuenta ++;
-    }else
+    }else if (cuenta > 66 && cuenta <140)
     {
-        pelota3.update();
-        pelota3.draw();
+        pelota1.update();
+        pelota1.draw();
+        pelota2.update();
+        pelota2.draw();
+        cuenta ++;
+    }else if (cuenta ==140)
+    {
+        pelota1.x=50;
+        pelota1.y= 50;
+        pelota1.color="yellow";
+        pelota2.x = 50;
+        pelota2.y= 250;
+        pelota2.color = "blue";
+        cuenta = 0;
     }
+
 }
 
 // Función que limpia los pasos de la pelota
@@ -95,6 +113,7 @@ window.onload = init;
 // Variables.
 var canvas, contexto, ancho_rectangulo, alto_rectangulo;
 var cuenta = 0;
+
 function hanColisionado(rectanguloA, rectanguloB) {
     return !(
         ((rectanguloA.y + rectanguloA.height) < (rectanguloB.y)) ||
