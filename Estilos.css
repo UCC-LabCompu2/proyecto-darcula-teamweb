@@ -2,7 +2,7 @@
     text-align: center;
     width: 500px;
     height: 30px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .ambos {
@@ -45,6 +45,10 @@ h1, h2, b, p, h3 {
     color: black;
 }
 
+h2{
+    text-align: center;
+}
+
 a {
     color: black;
     background: gray;
@@ -56,13 +60,13 @@ a {
 
 .encabezado {
     size: 20px;
-    color: blue;
+    color: gray;
     text-align: center;
 }
 
 body {
 
-    background: url("https://image.freepik.com/vector-gratis/fondo-de-textura-con-un-diseno-de-madera-clara_1048-1352.jpg");
+    background-image: url("IMAGENES/FONDO7.jpg");
 }
 
 .columnaleft {
