@@ -2,7 +2,7 @@
     text-align: center;
     width: 500px;
     height: 30px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .ambos {
@@ -57,6 +57,7 @@ a {
 .encabezado {
     size: 20px;
     color: blue;
+    text-align: center;
 }
 
 body {
