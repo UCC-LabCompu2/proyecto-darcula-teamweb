@@ -1,9 +1,7 @@
 /**
  * Created by aguma on 19/6/2017.
  */
-/**
- * Created by aguma on 15/6/2017.
- */
+
 // Función que crea un circulo.
 function circle(x, y, r, color) {
     contexto.fillStyle = color;
